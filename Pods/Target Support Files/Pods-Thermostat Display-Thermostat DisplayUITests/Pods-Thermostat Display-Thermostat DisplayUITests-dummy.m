@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Thermostat_Display_Thermostat_DisplayUITests : NSObject
+@end
+@implementation PodsDummy_Pods_Thermostat_Display_Thermostat_DisplayUITests
+@end

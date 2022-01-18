@@ -1,0 +1,1084 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20242126278F2EEB0052602A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20242125278F2EEB0052602A /* AppDelegate.swift */; };
+		20242132278F2EF40052602A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20242130278F2EF40052602A /* LaunchScreen.storyboard */; };
+		2024213D278F2EF40052602A /* Thermostat_DisplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2024213C278F2EF40052602A /* Thermostat_DisplayTests.swift */; };
+		20242148278F2EF50052602A /* Thermostat_DisplayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20242147278F2EF50052602A /* Thermostat_DisplayUITests.swift */; };
+		20242191278F2FFC0052602A /* GoogleLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2024215C278F2FFB0052602A /* GoogleLoginService.swift */; };
+		20242192278F2FFC0052602A /* HumidityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2024215F278F2FFB0052602A /* HumidityRepository.swift */; };
+		20242193278F2FFC0052602A /* UseCaseLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20242161278F2FFB0052602A /* UseCaseLocator.swift */; };
+		20242194278F2FFC0052602A /* HumidityInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20242163278F2FFB0052602A /* HumidityInfo.swift */; };
+		20242197278F2FFC0052602A /* HumidityUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20242168278F2FFB0052602A /* HumidityUseCase.swift */; };
+		2024219C278F2FFC0052602A /* HumidityRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20242171278F2FFB0052602A /* HumidityRepositoryImpl.swift */; };
+		2024219D278F2FFC0052602A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20242174278F2FFB0052602A /* Constants.swift */; };
+		2024219E278F2FFC0052602A /* HumidityInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20242176278F2FFB0052602A /* HumidityInfoRequest.swift */; };
+		2024219F278F2FFC0052602A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20242178278F2FFB0052602A /* APIClient.swift */; };
+		202421A0278F2FFC0052602A /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20242179278F2FFB0052602A /* Result.swift */; };
+		202421A1278F2FFC0052602A /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2024217A278F2FFB0052602A /* JSON.swift */; };
+		202421A2278F2FFC0052602A /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2024217B278F2FFB0052602A /* APIResponse.swift */; };
+		202421A3278F2FFC0052602A /* HumidityInfoAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2024217D278F2FFB0052602A /* HumidityInfoAPIResponse.swift */; };
+		202421A4278F2FFC0052602A /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2024217F278F2FFC0052602A /* TokenManager.swift */; };
+		202421A7278F2FFC0052602A /* RouterUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20242189278F2FFC0052602A /* RouterUtility.swift */; };
+		202421A8278F2FFC0052602A /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2024218B278F2FFC0052602A /* UIWindowExtension.swift */; };
+		2024223A278F43D00052602A /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20242236278F43D00052602A /* LoginConfigurator.swift */; };
+		2024223B278F43D00052602A /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20242239278F43D00052602A /* LoginRouter.swift */; };
+		2024223C278F43D00052602A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20242238278F43D00052602A /* LoginController.swift */; };
+		2024223D278F43D00052602A /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20242237278F43D00052602A /* LoginPresenter.swift */; };
+		20242249278F43FB0052602A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20242247278F43FB0052602A /* Main.storyboard */; };
+		2024228D278FC6850052602A /* ImageAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2024228C278FC6850052602A /* ImageAssets.xcassets */; };
+		2024229F278FCCE10052602A /* HumidityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2024229D278FCCE10052602A /* HumidityController.swift */; };
+		202422A0278FCCE10052602A /* HumidityConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2024229C278FCCE10052602A /* HumidityConfigurator.swift */; };
+		202422A1278FCCE10052602A /* HumidityRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2024229B278FCCE10052602A /* HumidityRouter.swift */; };
+		202422A2278FCCE10052602A /* HumidityPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2024229E278FCCE10052602A /* HumidityPresenter.swift */; };
+		202422AB278FD1BA0052602A /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202422AA278FD1BA0052602A /* AppConstants.swift */; };
+		20643996278FD9E20002E475 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20643995278FD9E20002E475 /* UIViewControllerExtension.swift */; };
+		38D9F6E873FA6BDB78C5539B /* Pods_Thermostat_DisplayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701381DBAF8479EE3D92E544 /* Pods_Thermostat_DisplayTests.framework */; };
+		827893432C533642622A6736 /* Pods_Thermostat_Display.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2A9B234DBBE7FBE37608E9 /* Pods_Thermostat_Display.framework */; };
+		D1B3411601A7E90CBCFC62A2 /* Pods_Thermostat_Display_Thermostat_DisplayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FC9E698A605D0854C2CD4D /* Pods_Thermostat_Display_Thermostat_DisplayUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20242139278F2EF40052602A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2024211A278F2EEA0052602A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20242121278F2EEA0052602A;
+			remoteInfo = "Thermostat Display";
+		};
+		20242144278F2EF40052602A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2024211A278F2EEA0052602A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20242121278F2EEA0052602A;
+			remoteInfo = "Thermostat Display";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20242122278F2EEA0052602A /* Thermostat Display.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Thermostat Display.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20242125278F2EEB0052602A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../AppDelegate.swift; sourceTree = "<group>"; };
+		20242131278F2EF40052602A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20242138278F2EF40052602A /* Thermostat DisplayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Thermostat DisplayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2024213C278F2EF40052602A /* Thermostat_DisplayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thermostat_DisplayTests.swift; sourceTree = "<group>"; };
+		2024213E278F2EF40052602A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20242143278F2EF40052602A /* Thermostat DisplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Thermostat DisplayUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20242147278F2EF50052602A /* Thermostat_DisplayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thermostat_DisplayUITests.swift; sourceTree = "<group>"; };
+		20242149278F2EF50052602A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2024215C278F2FFB0052602A /* GoogleLoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleLoginService.swift; sourceTree = "<group>"; };
+		2024215F278F2FFB0052602A /* HumidityRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumidityRepository.swift; sourceTree = "<group>"; };
+		20242161278F2FFB0052602A /* UseCaseLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseLocator.swift; sourceTree = "<group>"; };
+		20242163278F2FFB0052602A /* HumidityInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumidityInfo.swift; sourceTree = "<group>"; };
+		20242168278F2FFB0052602A /* HumidityUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumidityUseCase.swift; sourceTree = "<group>"; };
+		20242171278F2FFB0052602A /* HumidityRepositoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumidityRepositoryImpl.swift; sourceTree = "<group>"; };
+		20242174278F2FFB0052602A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		20242176278F2FFB0052602A /* HumidityInfoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumidityInfoRequest.swift; sourceTree = "<group>"; };
+		20242178278F2FFB0052602A /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		20242179278F2FFB0052602A /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		2024217A278F2FFB0052602A /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		2024217B278F2FFB0052602A /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		2024217D278F2FFB0052602A /* HumidityInfoAPIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumidityInfoAPIResponse.swift; sourceTree = "<group>"; };
+		2024217F278F2FFC0052602A /* TokenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		20242189278F2FFC0052602A /* RouterUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterUtility.swift; sourceTree = "<group>"; };
+		2024218B278F2FFC0052602A /* UIWindowExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindowExtension.swift; sourceTree = "<group>"; };
+		20242190278F2FFC0052602A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20242236278F43D00052602A /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
+		20242237278F43D00052602A /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		20242238278F43D00052602A /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		20242239278F43D00052602A /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		20242248278F43FB0052602A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2024228C278FC6850052602A /* ImageAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImageAssets.xcassets; sourceTree = "<group>"; };
+		2024229B278FCCE10052602A /* HumidityRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumidityRouter.swift; sourceTree = "<group>"; };
+		2024229C278FCCE10052602A /* HumidityConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumidityConfigurator.swift; sourceTree = "<group>"; };
+		2024229D278FCCE10052602A /* HumidityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumidityController.swift; sourceTree = "<group>"; };
+		2024229E278FCCE10052602A /* HumidityPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumidityPresenter.swift; sourceTree = "<group>"; };
+		202422AA278FD1BA0052602A /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		20643995278FD9E20002E475 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		32E6C590DBE922EA28964C3E /* Pods-Thermostat DisplayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thermostat DisplayTests.release.xcconfig"; path = "Target Support Files/Pods-Thermostat DisplayTests/Pods-Thermostat DisplayTests.release.xcconfig"; sourceTree = "<group>"; };
+		3B2A9B234DBBE7FBE37608E9 /* Pods_Thermostat_Display.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thermostat_Display.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AC7D742A5B0A37528A48CDC /* Pods-Thermostat DisplayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thermostat DisplayTests.debug.xcconfig"; path = "Target Support Files/Pods-Thermostat DisplayTests/Pods-Thermostat DisplayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		701381DBAF8479EE3D92E544 /* Pods_Thermostat_DisplayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thermostat_DisplayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A3DFDC6847875AEDB7A2124 /* Pods-Thermostat Display-Thermostat DisplayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thermostat Display-Thermostat DisplayUITests.release.xcconfig"; path = "Target Support Files/Pods-Thermostat Display-Thermostat DisplayUITests/Pods-Thermostat Display-Thermostat DisplayUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7E304D16B0C96A930413A4A1 /* Pods-Thermostat Display.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thermostat Display.debug.xcconfig"; path = "Target Support Files/Pods-Thermostat Display/Pods-Thermostat Display.debug.xcconfig"; sourceTree = "<group>"; };
+		AFCF09D91D67C7E7ABAB2186 /* Pods-Thermostat Display-Thermostat DisplayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thermostat Display-Thermostat DisplayUITests.debug.xcconfig"; path = "Target Support Files/Pods-Thermostat Display-Thermostat DisplayUITests/Pods-Thermostat Display-Thermostat DisplayUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C6E14C38955E484454D43785 /* Pods-Thermostat Display.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thermostat Display.release.xcconfig"; path = "Target Support Files/Pods-Thermostat Display/Pods-Thermostat Display.release.xcconfig"; sourceTree = "<group>"; };
+		E9FC9E698A605D0854C2CD4D /* Pods_Thermostat_Display_Thermostat_DisplayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thermostat_Display_Thermostat_DisplayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2024211F278F2EEA0052602A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				827893432C533642622A6736 /* Pods_Thermostat_Display.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20242135278F2EF40052602A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38D9F6E873FA6BDB78C5539B /* Pods_Thermostat_DisplayTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20242140278F2EF40052602A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1B3411601A7E90CBCFC62A2 /* Pods_Thermostat_Display_Thermostat_DisplayUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20242119278F2EEA0052602A = {
+			isa = PBXGroup;
+			children = (
+				20242124278F2EEA0052602A /* Thermostat Display */,
+				2024213B278F2EF40052602A /* Thermostat DisplayTests */,
+				20242146278F2EF40052602A /* Thermostat DisplayUITests */,
+				20242123278F2EEA0052602A /* Products */,
+				B7C9A1E2C74D1E5EEBE26096 /* Pods */,
+				5396F7BAC4B505067D2C7FF4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		20242123278F2EEA0052602A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20242122278F2EEA0052602A /* Thermostat Display.app */,
+				20242138278F2EF40052602A /* Thermostat DisplayTests.xctest */,
+				20242143278F2EF40052602A /* Thermostat DisplayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20242124278F2EEA0052602A /* Thermostat Display */ = {
+			isa = PBXGroup;
+			children = (
+				2024216B278F2FFB0052602A /* Data */,
+				2024215D278F2FFB0052602A /* Domain */,
+				2024218E278F2FFC0052602A /* Resources */,
+				2024215B278F2FFB0052602A /* Services */,
+				20242180278F2FFC0052602A /* UI */,
+			);
+			path = "Thermostat Display";
+			sourceTree = "<group>";
+		};
+		2024213B278F2EF40052602A /* Thermostat DisplayTests */ = {
+			isa = PBXGroup;
+			children = (
+				2024213C278F2EF40052602A /* Thermostat_DisplayTests.swift */,
+				2024213E278F2EF40052602A /* Info.plist */,
+			);
+			path = "Thermostat DisplayTests";
+			sourceTree = "<group>";
+		};
+		20242146278F2EF40052602A /* Thermostat DisplayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				20242147278F2EF50052602A /* Thermostat_DisplayUITests.swift */,
+				20242149278F2EF50052602A /* Info.plist */,
+			);
+			path = "Thermostat DisplayUITests";
+			sourceTree = "<group>";
+		};
+		2024215B278F2FFB0052602A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2024215C278F2FFB0052602A /* GoogleLoginService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2024215D278F2FFB0052602A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				202422A9278FD18F0052602A /* Constants */,
+				2024215E278F2FFB0052602A /* RepositoryProtocols */,
+				20242160278F2FFB0052602A /* Locator */,
+				20242162278F2FFB0052602A /* Entity */,
+				20242167278F2FFB0052602A /* Usecases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		2024215E278F2FFB0052602A /* RepositoryProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				2024215F278F2FFB0052602A /* HumidityRepository.swift */,
+			);
+			path = RepositoryProtocols;
+			sourceTree = "<group>";
+		};
+		20242160278F2FFB0052602A /* Locator */ = {
+			isa = PBXGroup;
+			children = (
+				20242161278F2FFB0052602A /* UseCaseLocator.swift */,
+			);
+			path = Locator;
+			sourceTree = "<group>";
+		};
+		20242162278F2FFB0052602A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				20242163278F2FFB0052602A /* HumidityInfo.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		20242167278F2FFB0052602A /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				20242168278F2FFB0052602A /* HumidityUseCase.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		2024216B278F2FFB0052602A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				20242170278F2FFB0052602A /* Repositories */,
+				20242172278F2FFB0052602A /* API */,
+				2024217E278F2FFB0052602A /* TokenManager */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		20242170278F2FFB0052602A /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				20242171278F2FFB0052602A /* HumidityRepositoryImpl.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		20242172278F2FFB0052602A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				20242173278F2FFB0052602A /* Constants */,
+				20242175278F2FFB0052602A /* Requests */,
+				20242177278F2FFB0052602A /* Base */,
+				2024217C278F2FFB0052602A /* Entities */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		20242173278F2FFB0052602A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				20242174278F2FFB0052602A /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		20242175278F2FFB0052602A /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				20242176278F2FFB0052602A /* HumidityInfoRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		20242177278F2FFB0052602A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				20242178278F2FFB0052602A /* APIClient.swift */,
+				20242179278F2FFB0052602A /* Result.swift */,
+				2024217A278F2FFB0052602A /* JSON.swift */,
+				2024217B278F2FFB0052602A /* APIResponse.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2024217C278F2FFB0052602A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				2024217D278F2FFB0052602A /* HumidityInfoAPIResponse.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		2024217E278F2FFB0052602A /* TokenManager */ = {
+			isa = PBXGroup;
+			children = (
+				2024217F278F2FFC0052602A /* TokenManager.swift */,
+			);
+			path = TokenManager;
+			sourceTree = "<group>";
+		};
+		20242180278F2FFC0052602A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				20242181278F2FFC0052602A /* Storyboards */,
+				20242184278F2FFC0052602A /* Scenes */,
+				20242185278F2FFC0052602A /* Appdelegate */,
+				20242187278F2FFC0052602A /* Utility */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		20242181278F2FFC0052602A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				20242130278F2EF40052602A /* LaunchScreen.storyboard */,
+				20242247278F43FB0052602A /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		20242184278F2FFC0052602A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				20242295278FCCA90052602A /* Humidity */,
+				20242294278FCC970052602A /* Login */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		20242185278F2FFC0052602A /* Appdelegate */ = {
+			isa = PBXGroup;
+			children = (
+				20242125278F2EEB0052602A /* AppDelegate.swift */,
+			);
+			path = Appdelegate;
+			sourceTree = "<group>";
+		};
+		20242187278F2FFC0052602A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				20242188278F2FFC0052602A /* RouterUtility */,
+				2024218A278F2FFC0052602A /* Extensions */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		20242188278F2FFC0052602A /* RouterUtility */ = {
+			isa = PBXGroup;
+			children = (
+				20242189278F2FFC0052602A /* RouterUtility.swift */,
+			);
+			path = RouterUtility;
+			sourceTree = "<group>";
+		};
+		2024218A278F2FFC0052602A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2024218B278F2FFC0052602A /* UIWindowExtension.swift */,
+				20643995278FD9E20002E475 /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2024218E278F2FFC0052602A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2024218F278F2FFC0052602A /* Plists */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2024218F278F2FFC0052602A /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				20242190278F2FFC0052602A /* Info.plist */,
+				2024228C278FC6850052602A /* ImageAssets.xcassets */,
+			);
+			path = Plists;
+			sourceTree = "<group>";
+		};
+		20242294278FCC970052602A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				20242236278F43D00052602A /* LoginConfigurator.swift */,
+				20242238278F43D00052602A /* LoginController.swift */,
+				20242237278F43D00052602A /* LoginPresenter.swift */,
+				20242239278F43D00052602A /* LoginRouter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		20242295278FCCA90052602A /* Humidity */ = {
+			isa = PBXGroup;
+			children = (
+				2024229C278FCCE10052602A /* HumidityConfigurator.swift */,
+				2024229D278FCCE10052602A /* HumidityController.swift */,
+				2024229E278FCCE10052602A /* HumidityPresenter.swift */,
+				2024229B278FCCE10052602A /* HumidityRouter.swift */,
+			);
+			path = Humidity;
+			sourceTree = "<group>";
+		};
+		202422A9278FD18F0052602A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				202422AA278FD1BA0052602A /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		5396F7BAC4B505067D2C7FF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B2A9B234DBBE7FBE37608E9 /* Pods_Thermostat_Display.framework */,
+				E9FC9E698A605D0854C2CD4D /* Pods_Thermostat_Display_Thermostat_DisplayUITests.framework */,
+				701381DBAF8479EE3D92E544 /* Pods_Thermostat_DisplayTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7C9A1E2C74D1E5EEBE26096 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E304D16B0C96A930413A4A1 /* Pods-Thermostat Display.debug.xcconfig */,
+				C6E14C38955E484454D43785 /* Pods-Thermostat Display.release.xcconfig */,
+				AFCF09D91D67C7E7ABAB2186 /* Pods-Thermostat Display-Thermostat DisplayUITests.debug.xcconfig */,
+				7A3DFDC6847875AEDB7A2124 /* Pods-Thermostat Display-Thermostat DisplayUITests.release.xcconfig */,
+				5AC7D742A5B0A37528A48CDC /* Pods-Thermostat DisplayTests.debug.xcconfig */,
+				32E6C590DBE922EA28964C3E /* Pods-Thermostat DisplayTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20242121278F2EEA0052602A /* Thermostat Display */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2024214C278F2EF50052602A /* Build configuration list for PBXNativeTarget "Thermostat Display" */;
+			buildPhases = (
+				FF7146C10C89B813F4927DEA /* [CP] Check Pods Manifest.lock */,
+				2024211E278F2EEA0052602A /* Sources */,
+				2024211F278F2EEA0052602A /* Frameworks */,
+				20242120278F2EEA0052602A /* Resources */,
+				127707529DAFE8DA660F8D72 /* [CP] Embed Pods Frameworks */,
+				5E976E4C6B8D9529BEB65433 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Thermostat Display";
+			productName = "Thermostat Display";
+			productReference = 20242122278F2EEA0052602A /* Thermostat Display.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20242137278F2EF40052602A /* Thermostat DisplayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2024214F278F2EF50052602A /* Build configuration list for PBXNativeTarget "Thermostat DisplayTests" */;
+			buildPhases = (
+				14D4C1C5CD4C756218795E47 /* [CP] Check Pods Manifest.lock */,
+				20242134278F2EF40052602A /* Sources */,
+				20242135278F2EF40052602A /* Frameworks */,
+				20242136278F2EF40052602A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2024213A278F2EF40052602A /* PBXTargetDependency */,
+			);
+			name = "Thermostat DisplayTests";
+			productName = "Thermostat DisplayTests";
+			productReference = 20242138278F2EF40052602A /* Thermostat DisplayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		20242142278F2EF40052602A /* Thermostat DisplayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20242152278F2EF50052602A /* Build configuration list for PBXNativeTarget "Thermostat DisplayUITests" */;
+			buildPhases = (
+				79D63E643C94484644520C8D /* [CP] Check Pods Manifest.lock */,
+				2024213F278F2EF40052602A /* Sources */,
+				20242140278F2EF40052602A /* Frameworks */,
+				20242141278F2EF40052602A /* Resources */,
+				597D51B0E443E13D2F2F59F2 /* [CP] Embed Pods Frameworks */,
+				3C9BF0064C1E16774FAEA818 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20242145278F2EF40052602A /* PBXTargetDependency */,
+			);
+			name = "Thermostat DisplayUITests";
+			productName = "Thermostat DisplayUITests";
+			productReference = 20242143278F2EF40052602A /* Thermostat DisplayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2024211A278F2EEA0052602A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					20242121278F2EEA0052602A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					20242137278F2EF40052602A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 20242121278F2EEA0052602A;
+					};
+					20242142278F2EF40052602A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 20242121278F2EEA0052602A;
+					};
+				};
+			};
+			buildConfigurationList = 2024211D278F2EEA0052602A /* Build configuration list for PBXProject "Thermostat Display" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20242119278F2EEA0052602A;
+			productRefGroup = 20242123278F2EEA0052602A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20242121278F2EEA0052602A /* Thermostat Display */,
+				20242137278F2EF40052602A /* Thermostat DisplayTests */,
+				20242142278F2EF40052602A /* Thermostat DisplayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20242120278F2EEA0052602A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20242132278F2EF40052602A /* LaunchScreen.storyboard in Resources */,
+				20242249278F43FB0052602A /* Main.storyboard in Resources */,
+				2024228D278FC6850052602A /* ImageAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20242136278F2EF40052602A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20242141278F2EF40052602A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		127707529DAFE8DA660F8D72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Thermostat Display/Pods-Thermostat Display-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Thermostat Display/Pods-Thermostat Display-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Thermostat Display/Pods-Thermostat Display-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14D4C1C5CD4C756218795E47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Thermostat DisplayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C9BF0064C1E16774FAEA818 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Thermostat Display-Thermostat DisplayUITests/Pods-Thermostat Display-Thermostat DisplayUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Thermostat Display-Thermostat DisplayUITests/Pods-Thermostat Display-Thermostat DisplayUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Thermostat Display-Thermostat DisplayUITests/Pods-Thermostat Display-Thermostat DisplayUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		597D51B0E443E13D2F2F59F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Thermostat Display-Thermostat DisplayUITests/Pods-Thermostat Display-Thermostat DisplayUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Thermostat Display-Thermostat DisplayUITests/Pods-Thermostat Display-Thermostat DisplayUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Thermostat Display-Thermostat DisplayUITests/Pods-Thermostat Display-Thermostat DisplayUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E976E4C6B8D9529BEB65433 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Thermostat Display/Pods-Thermostat Display-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Thermostat Display/Pods-Thermostat Display-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Thermostat Display/Pods-Thermostat Display-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79D63E643C94484644520C8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Thermostat Display-Thermostat DisplayUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF7146C10C89B813F4927DEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Thermostat Display-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2024211E278F2EEA0052602A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				202421A3278F2FFC0052602A /* HumidityInfoAPIResponse.swift in Sources */,
+				20242193278F2FFC0052602A /* UseCaseLocator.swift in Sources */,
+				2024223A278F43D00052602A /* LoginConfigurator.swift in Sources */,
+				20242197278F2FFC0052602A /* HumidityUseCase.swift in Sources */,
+				2024223D278F43D00052602A /* LoginPresenter.swift in Sources */,
+				2024219E278F2FFC0052602A /* HumidityInfoRequest.swift in Sources */,
+				202421A1278F2FFC0052602A /* JSON.swift in Sources */,
+				2024219F278F2FFC0052602A /* APIClient.swift in Sources */,
+				20242192278F2FFC0052602A /* HumidityRepository.swift in Sources */,
+				20242191278F2FFC0052602A /* GoogleLoginService.swift in Sources */,
+				2024219C278F2FFC0052602A /* HumidityRepositoryImpl.swift in Sources */,
+				20643996278FD9E20002E475 /* UIViewControllerExtension.swift in Sources */,
+				202422A0278FCCE10052602A /* HumidityConfigurator.swift in Sources */,
+				202421A4278F2FFC0052602A /* TokenManager.swift in Sources */,
+				202422A1278FCCE10052602A /* HumidityRouter.swift in Sources */,
+				202421A7278F2FFC0052602A /* RouterUtility.swift in Sources */,
+				2024223C278F43D00052602A /* LoginController.swift in Sources */,
+				2024229F278FCCE10052602A /* HumidityController.swift in Sources */,
+				2024219D278F2FFC0052602A /* Constants.swift in Sources */,
+				202421A0278F2FFC0052602A /* Result.swift in Sources */,
+				20242194278F2FFC0052602A /* HumidityInfo.swift in Sources */,
+				202421A8278F2FFC0052602A /* UIWindowExtension.swift in Sources */,
+				202422A2278FCCE10052602A /* HumidityPresenter.swift in Sources */,
+				20242126278F2EEB0052602A /* AppDelegate.swift in Sources */,
+				202422AB278FD1BA0052602A /* AppConstants.swift in Sources */,
+				2024223B278F43D00052602A /* LoginRouter.swift in Sources */,
+				202421A2278F2FFC0052602A /* APIResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20242134278F2EF40052602A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2024213D278F2EF40052602A /* Thermostat_DisplayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2024213F278F2EF40052602A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20242148278F2EF50052602A /* Thermostat_DisplayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2024213A278F2EF40052602A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20242121278F2EEA0052602A /* Thermostat Display */;
+			targetProxy = 20242139278F2EF40052602A /* PBXContainerItemProxy */;
+		};
+		20242145278F2EF40052602A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20242121278F2EEA0052602A /* Thermostat Display */;
+			targetProxy = 20242144278F2EF40052602A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20242130278F2EF40052602A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20242131278F2EF40052602A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		20242247278F43FB0052602A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20242248278F43FB0052602A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2024214A278F2EF50052602A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2024214B278F2EF50052602A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2024214D278F2EF50052602A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E304D16B0C96A930413A4A1 /* Pods-Thermostat Display.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Thermostat Display/Resources/Plists/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carrier.thermostat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2024214E278F2EF50052602A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6E14C38955E484454D43785 /* Pods-Thermostat Display.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Thermostat Display/Resources/Plists/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carrier.thermostat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		20242150278F2EF50052602A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AC7D742A5B0A37528A48CDC /* Pods-Thermostat DisplayTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Thermostat DisplayTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carrier.Thermostat-DisplayTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thermostat Display.app/Thermostat Display";
+			};
+			name = Debug;
+		};
+		20242151278F2EF50052602A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32E6C590DBE922EA28964C3E /* Pods-Thermostat DisplayTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Thermostat DisplayTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carrier.Thermostat-DisplayTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thermostat Display.app/Thermostat Display";
+			};
+			name = Release;
+		};
+		20242153278F2EF50052602A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFCF09D91D67C7E7ABAB2186 /* Pods-Thermostat Display-Thermostat DisplayUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Thermostat DisplayUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carrier.Thermostat-DisplayUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Thermostat Display";
+			};
+			name = Debug;
+		};
+		20242154278F2EF50052602A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A3DFDC6847875AEDB7A2124 /* Pods-Thermostat Display-Thermostat DisplayUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Thermostat DisplayUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carrier.Thermostat-DisplayUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Thermostat Display";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2024211D278F2EEA0052602A /* Build configuration list for PBXProject "Thermostat Display" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2024214A278F2EF50052602A /* Debug */,
+				2024214B278F2EF50052602A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2024214C278F2EF50052602A /* Build configuration list for PBXNativeTarget "Thermostat Display" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2024214D278F2EF50052602A /* Debug */,
+				2024214E278F2EF50052602A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2024214F278F2EF50052602A /* Build configuration list for PBXNativeTarget "Thermostat DisplayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20242150278F2EF50052602A /* Debug */,
+				20242151278F2EF50052602A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20242152278F2EF50052602A /* Build configuration list for PBXNativeTarget "Thermostat DisplayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20242153278F2EF50052602A /* Debug */,
+				20242154278F2EF50052602A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2024211A278F2EEA0052602A /* Project object */;
+}

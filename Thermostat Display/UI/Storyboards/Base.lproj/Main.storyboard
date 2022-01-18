@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W0g-8x-XIX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="MOo-2N-gww">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="W0g-8x-XIX" customClass="LoginViewController" customModule="Thermostat_Display" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tT1-5e-qoa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efM-qI-V9R">
+                                <rect key="frame" x="40" y="426" width="334" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="eNG-HA-DNN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <inset key="imageEdgeInsets" minX="-22" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Login With Google" image="Glogo">
+                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginWithGoogleTapped:" destination="W0g-8x-XIX" eventType="touchUpInside" id="R75-du-LUu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yVg-DJ-CVQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="efM-qI-V9R" firstAttribute="centerX" secondItem="tT1-5e-qoa" secondAttribute="centerX" id="3nj-s0-idy"/>
+                            <constraint firstItem="yVg-DJ-CVQ" firstAttribute="trailing" secondItem="efM-qI-V9R" secondAttribute="trailing" constant="40" id="NRd-ee-Ier"/>
+                            <constraint firstItem="efM-qI-V9R" firstAttribute="leading" secondItem="yVg-DJ-CVQ" secondAttribute="leading" constant="40" id="Y4p-Pa-zKT"/>
+                            <constraint firstItem="efM-qI-V9R" firstAttribute="centerY" secondItem="tT1-5e-qoa" secondAttribute="centerY" id="sVl-K4-29F"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="efM-qI-V9R" id="NV4-T1-jnz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hp8-Qw-63I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="148" y="-35"/>
+        </scene>
+        <!--Humidity View Controller-->
+        <scene sceneID="RBn-Ax-q5W">
+            <objects>
+                <viewController storyboardIdentifier="HumidityViewController" id="OYt-4t-0Kg" customClass="HumidityViewController" customModule="Thermostat_Display" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oRr-1t-ixX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ambient humidity - " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOL-8F-iJJ">
+                                <rect key="frame" x="30" y="437.5" width="354" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CQ2-Uy-JXJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mOL-8F-iJJ" firstAttribute="leading" secondItem="CQ2-Uy-JXJ" secondAttribute="leading" constant="30" id="70i-WI-Q6X"/>
+                            <constraint firstItem="CQ2-Uy-JXJ" firstAttribute="trailing" secondItem="mOL-8F-iJJ" secondAttribute="trailing" constant="30" id="Ctp-qD-HWA"/>
+                            <constraint firstItem="mOL-8F-iJJ" firstAttribute="centerY" secondItem="oRr-1t-ixX" secondAttribute="centerY" id="fRo-rL-d56"/>
+                            <constraint firstItem="mOL-8F-iJJ" firstAttribute="centerX" secondItem="oRr-1t-ixX" secondAttribute="centerX" id="xZo-Uu-S6Q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ambientHumidityLabel" destination="mOL-8F-iJJ" id="jqd-t1-Gbb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0b8-g6-52g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054" y="-45"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Glogo" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

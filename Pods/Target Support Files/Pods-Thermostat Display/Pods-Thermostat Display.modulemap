@@ -1,0 +1,6 @@
+framework module Pods_Thermostat_Display {
+  umbrella header "Pods-Thermostat Display-umbrella.h"
+
+  export *
+  module * { export * }
+}
