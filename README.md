@@ -13,7 +13,7 @@ For implementing the google login feature, I have used the GoogleSignIn sdk. I h
 For Networking call I have used NSUrlSession.
 
 
-#Instruction to Open Project in Xcode
+## Instruction to Open Project in Xcode
 
 Open the Thermostat Display folder and you will see Thermostat Display.xcworkspace.
 If you double click on Thermostat Display.xcworkspace you can open the project in Xcode.
